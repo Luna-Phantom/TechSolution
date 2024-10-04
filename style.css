@@ -48,7 +48,7 @@ a{
 
 body {
     font-family:Poppins;
-    background-image: url(/Imagens/fundo.jpeg);
+    background-image: url(Imagens/fundo.jpeg);
 }
 
 .card-container1 {
@@ -56,7 +56,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
-    background-image: url(/Imagens/fundo.jpeg);
+    background-image: url(Imagens/fundo.jpeg);
 }
 
 .card1 {
@@ -76,7 +76,7 @@ body {
 }
 
 .titulos{    
-    background-image: url(/Imagens/fundo.jpeg);
+    background-image: url(Imagens/fundo.jpeg);
     margin-top: 50px;
     width: 100%;
     height: 100;
@@ -103,7 +103,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
-    background-image: url(/Imagens/fundo.jpeg);
+    background-image: url(Imagens/fundo.jpeg);
 }
 
 .card2 {
@@ -132,7 +132,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
-    background-image: url(/Imagens/fundo.jpeg);
+    background-image: url(Imagens/fundo.jpeg);
 
 }
 
