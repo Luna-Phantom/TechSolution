@@ -255,6 +255,8 @@ body {
 
   
 .falta_ideia {
+    background-color: #630063;
+    border: 1px solid rgb(0, 0, 0);
     padding: 0 18px;
     display: none;
     overflow: hidden;
