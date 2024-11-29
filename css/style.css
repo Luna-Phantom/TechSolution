@@ -240,6 +240,7 @@ body {
 
 .sem_ideia {
     background-color: #630063;
+    color: #eeff00;
     cursor: pointer;
     padding: 18px;
     width: 95%;
@@ -249,20 +250,16 @@ body {
     margin-left: 15px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
-    color: #eeff00;
 }
   
 
   
 .falta_ideia {
-    background-color: #630063;
-    border: 1px solid rgb(0, 0, 0);
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background:local;
     width: 100%;
-    color: #eeff00;
     
 }
 
