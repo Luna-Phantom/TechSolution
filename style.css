@@ -111,7 +111,7 @@ p{
 
 body {
     font-family:Poppins;
-    background-image: url(/Imagens/fundo.jpeg);
+    background-image: url('./Imagens/fundo.jpeg');
 }
 
 .card-container1 {
