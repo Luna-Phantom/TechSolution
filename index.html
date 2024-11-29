@@ -23,7 +23,7 @@
         </div>
         <nav class="nav" id="nav">
           <ul>
-            <li><a href="index.html"><img class="logo" src="Imagens/logo.jpg" alt="logo"></li>
+            <a href="index.html"><img class="logo" src="Imagens/logo.jpg" alt="logo">
             <li><a class="opcoes" href="index.html">Inicio</a></li>
             <li><a class="opcoes" href="estudante.html">Estudante</a></li>
             <li><a class="opcoes" href="comunidade.html">Comunidade</a></li>
@@ -213,7 +213,7 @@
             <p>Nome</p>
             <label><input class="nome" name="firstName" type="text"/></label>
             <label>
-                <select class="option" name="Nome">
+                <select name="Nome">
                     <option>Estudante</option>
                     <option>Comunidade</option>
                     <option>Mentor</option>
@@ -230,12 +230,22 @@
     </form>
 
     <form class="row2">
-            <p>Onde você nos achou ?</p>
-            <select class="option" name="Nome">
-                <option>Google</option>
-                <option>Facebook</option>
-                <option>Youtube</option>
-            </select>
+        <p>Onde você nos achou?</p>
+        <div class="toggle-list">
+            <label class="toggle-option">
+                <input name="origem" type="checkbox" value="google" />
+                <span>Google</span>
+            </label>
+            <label class="toggle-option">
+                <input name="origem" type="checkbox" value="facebook" />
+                <span>Facebook</span>
+            </label>
+            <label class="toggle-option">
+                <input name="origem" type="checkbox" value="universidades" />
+                <span>Universidades</span>
+            </label>
+        </div>
+        
     
             <p>Aceita nossos Termos?:</p>
             <label><input name="privacy" type="radio" checked /> Eu aceito os termos de serviços.</label>

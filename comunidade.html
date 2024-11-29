@@ -14,7 +14,7 @@
 
 <body>
 
- <header> 
+  <header> 
     <div id="menu">
         <div id="menu-bar" onclick="menuOnClick()">
           <div id="bar1" class="bar"></div>
@@ -23,7 +23,7 @@
         </div>
         <nav class="nav" id="nav">
           <ul>
-            <li><a href="index.html"><img class="logo" src="Imagens/logo.jpg" alt="logo"></li>
+            <a href="index.html"><img class="logo" src="Imagens/logo.jpg" alt="logo">
             <li><a class="opcoes" href="index.html">Inicio</a></li>
             <li><a class="opcoes" href="estudante.html">Estudante</a></li>
             <li><a class="opcoes" href="comunidade.html">Comunidade</a></li>
@@ -31,8 +31,14 @@
           </ul>
         </nav> 
     </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
+ </header>
 
-    <div class="grid">
+
+
+    <br>
+    <div class="grid" style="margin-top: 50px;">
         <h1>Em Construção!</h1>
         <img id="img" src="Imagens/obra.gif" alt="construindo">
     </div>
@@ -41,6 +47,8 @@
         color: yellow;
       }
     </style>
+
+  
  
 </body>
 <script src="main.js"></script>

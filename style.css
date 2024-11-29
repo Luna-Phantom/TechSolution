@@ -1,3 +1,6 @@
+#menu{
+    background-color: rgba(0, 0, 0, 0.7);
+}
 ul {
     display: flex;
     align-items: flex-end;
@@ -8,9 +11,8 @@ ul {
     border: 1px solid #eeff00;
     border-radius:10px;
 }
-ul:hover{
-    transform: scale(1.0);  
-    box-shadow: 0px 10px 20px #eeff00;
+ul li:hover{
+    transform: scale(1.1);  
 }
 
 .logo{
@@ -77,6 +79,7 @@ ul:hover{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    
 }
 
 .active {
@@ -111,7 +114,24 @@ p{
 
 body {
     font-family:Poppins;
-    background-image: url('./Imagens/fundo_2.jpg');
+    background: url(Imagens/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    width: 110%;
+    height: 110%;
+    background: url('Imagens/fundo.jpeg') no-repeat center center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
 }
 
 .card-container1 {
@@ -146,6 +166,7 @@ body {
     border-radius:10px;
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -154,7 +175,7 @@ body {
     padding: 25px;
     display: flex;
     justify-content: center;
-}
+}   
 
 .card-container2 {
     display: flex;
@@ -188,8 +209,6 @@ body {
 
 
 .grid-rodape{
-    font-family:Poppins;
-    background-image: url('./Imagens/fundo.jpeg');
     width: 100%;
     margin: 10px;
     margin-top: 15px;
@@ -200,6 +219,7 @@ body {
     display: flex;
     justify-content: center;
     justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -250,8 +270,6 @@ body {
     border-radius: 10px;
 }
   
-
-  
 .falta_ideia {
     padding: 0 18px;
     display: none;
@@ -263,36 +281,44 @@ body {
 
 .falta_ideia li{
     list-style: disc;
-
     border-radius: 10px;
 }
 
+.toggle-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
 
-.option {
+.toggle-option {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
     background-color: black;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #eeff00;
+}
+
+.toggle-option span {
+    font-size: 16px;
     color: #eeff00;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-  background-color: #222; /* Cinza-escuro */
-  color: yellow; /* Amarelo */
-  border: 1px solid yellow;
-}
 
-button,
-input[type="submit"] {
-  background-color: black;
-  color: yellow;
-  border: 1px solid yellow;
-  cursor: pointer;
-}
-
-button:hover,
-input[type="submit"]:hover {
-  background-color: yellow;
-  color: black;
+.toggle-option:hover {
+    background-color: #333;
+    border-color: #888;
 }

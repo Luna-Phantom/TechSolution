@@ -4,6 +4,8 @@ document.getElementById("nav").classList.toggle("change");
 document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
+//carrocel
+
 let slideIndex = 1;
 let slideInterval; // Variável para armazenar o intervalo do slideshow
   
@@ -58,6 +60,7 @@ let carrocelContainer = document.getElementById("carrocel-container");
 carrocelContainer.addEventListener("mouseover", stopAutoSlide);
 carrocelContainer.addEventListener("mouseout", startAutoSlide);
 
+//toggle list
 var coll = document.getElementsByClassName("sem_ideia");
 var i;
 
