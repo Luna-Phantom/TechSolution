@@ -272,3 +272,26 @@ body {
     background-color: black;
     color: #eeff00;
 }
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  background-color: #222; /* Cinza-escuro */
+  color: yellow; /* Amarelo */
+  border: 1px solid yellow;
+}
+
+button,
+input[type="submit"] {
+  background-color: black;
+  color: yellow;
+  border: 1px solid yellow;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: yellow;
+  color: black;
+}
