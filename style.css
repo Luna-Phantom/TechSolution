@@ -203,3 +203,38 @@ body {
 .nome{
     width: 350px;
 }
+
+.acaba{
+    width: 100%;
+}
+
+.sem_ideia {
+    background-color: #630063;
+    color: #eeff00;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    text-align: left;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+  
+
+  
+.falta_ideia {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background:local;
+    width: 100%;
+    
+}
+
+.falta_ideia li{
+    list-style: disc;
+
+    border-radius: 10px;
+}
