@@ -13,6 +13,7 @@
 
     #menu {
         z-index: 2;
+        
     }
       
     #menu-bar {
@@ -113,10 +114,6 @@
         display: block;
         border: none;
         margin: 0;
-    }
-
-    .carrocel {
-        max-width: 100%;
     }
 
     .card1 {
@@ -243,10 +240,6 @@
     
     .nome{
         width: 350px;
-    }
-
-    #carro{
-        height: 350px;
     }
 
 }

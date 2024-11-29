@@ -27,7 +27,7 @@ ul:hover{
 
 .carrocel {
     position: relative;
-    max-width: 50%;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -83,11 +83,6 @@ ul:hover{
     background-color: #717171;
 }
 
-#carro{
-    width: 100%;
-    height: 550px;
-}
-
 
 h2{
    color: #eeff00;
@@ -105,17 +100,9 @@ a{
     color: #eeff00;
 }
 
-p{
-    color: #eeff00;
-}
-
 body {
     font-family:Poppins;
-    background-image: url(/Imagens/fundo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: url(Imagens//fundo.jpeg)
 }
 
 .card-container1 {
@@ -148,10 +135,14 @@ body {
     height: 100;
     border: 1px solid #eeff00;
     border-radius:10px;
+}
+
+.titulo{
+    color: #eeff00;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
-
 
 .subtitulo{
     color: #eeff00;
@@ -194,7 +185,6 @@ body {
 .grid-rodape{
     width: 100%;
     margin: 10px;
-    margin-top: 15px;
     padding: 10px;
     color: #eeff00;
     border: 1px solid #eeff00;
@@ -232,41 +222,6 @@ body {
 
 .nome{
     width: 350px;
-}
-
-.acaba{
-    width: 100%;
-}
-
-.sem_ideia {
-    background-color: #630063;
-    color: #eeff00;
-    cursor: pointer;
-    padding: 18px;
-    width: 95%;
-    text-align: left;
-    outline: none;
-    margin-top: 15px;
-    margin-left: 15px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-}
-  
-
-  
-.falta_ideia {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background:local;
-    width: 100%;
-    
-}
-
-.falta_ideia li{
-    list-style: disc;
-
-    border-radius: 10px;
 }
 
 
