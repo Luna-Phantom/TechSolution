@@ -2,29 +2,39 @@
 <html lang="pt-br">
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>TechSolution</title>
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="reset.css">
+ <title>TechSolution</title>    
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
 
  <header> 
-  <div>
-   <nav class="menu">
-    <a href="index.html"><img class="logo" src="Imagens/logo.jpg" alt="logo"> <h3>TechSolution</h3>
-        <i style="color: #FFD43B;"></i>   </a>
-    <a class="opcoes" href="index.html">Início</a>
-    <a class="opcoes" href="estudante.html">Estudante</a>
-    <a class="opcoes" href="comunidade.html">Comunidade</a>
-    <a class="opcoes" href="mentores.html">Mentores</a>
-   </nav>
-  </div>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="index.html"><img class="logo" src="Imagens/logo.jpg" alt="logo"></li>
+            <li><a class="opcoes" href="index.html">Inicio</a></li>
+            <li><a class="opcoes" href="estudante.html">Estudante</a></li>
+            <li><a class="opcoes" href="comunidade.html">Comunidade</a></li>
+            <li><a class="opcoes" href="mentores.html">Mentores</a></li>
+          </ul>
+        </nav> 
+    </div>
+      
+      <div class="menu-bg" id="menu-bg"></div>
  </header>
+
 
  <div class="sessao">
     <div class="card-container1">
@@ -54,9 +64,40 @@
         </div>
     </div>
 <br>
+
+
+<div id="carrocel-container" class="carrocel">
+    <div class="slides fade">
+        <div class="numbertext">1 / 3</div>
+        <img id="carro" src="Imagens/slide1.jpg">
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">2 / 3</div>
+        <img id="carro" src="Imagens/slide2.jfif">
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">3 / 3</div>
+        <img id="carro" src="Imagens/slide3.jfif">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<br>
+
 </div>
     <div class="titulos">
-    <h1 class="titulo">Para quem são nossos serviços?</h1>
     <h3 class="subtitulo">Uma plataforma projetada para conectar estudantes, comunidade e mentores, criando soluções e oportunidades para todos.</h3>
     </div>
     <div class="card-container2">
@@ -86,7 +127,6 @@
         </div>
 </div>
 <div class="titulos">
-    <h1 class="titulo">Benefícios para você?</h1>
     <h3 class="subtitulo">Descubra como a TechSolution pode transformar sua experiência e oferecer vantagens únicas para cada perfil.</h3>
 </div>
 <div class="card-container2">
@@ -120,29 +160,22 @@
 
 
 <div class="titulos">
-    <h1 class="titulo">Porque nosso projeto é maravilhoso?</h1>
     <h3 class="subtitulo">A plataforma que está transformando a educação, o mercado e a comunidade, tudo de forma colaborativa e acessível.</h3>
-        <ul class="fake">
-        <li>+150</li>
-        <li>+150</li>
-        <li>+900</li>
-    </ul>
 </div>
-
-<div class="card-container3">
-    <div class="card3">
+<div class="card-container2">
+    <div class="card2">
         <h3>Soluções personalizadas</h3>
         <li>Desenvolvemos soluções tecnologicas sob medida</li>
         <li>Pequenos negocios e empreendedores locais obtêm exatamente o que precisam para crescer</li>
         <li>A TechSolution ajuda a impulcionar o desenvolvimento econômico da comunidade ao oferecer tecnologico acessível e eficas</li>
     </div>
-    <div class="card3">
+    <div class="card2">
         <h3>Soluções personalizadas</h3>
         <li>Desenvolvemos soluções tecnologicas sob medida</li>
         <li>Pequenos negocios e empreendedores locais obtêm exatamente o que precisam para crescer</li>
         <li>A TechSolution ajuda a impulcionar o desenvolvimento econômico da comunidade ao oferecer tecnologico acessível e eficas</li>
     </div>
-    <div class="card3">
+    <div class="card2">
         <h3>Soluções personalizadas</h3>
         <li>Desenvolvemos soluções tecnologicas sob medida</li>
         <li>Pequenos negocios e empreendedores locais obtêm exatamente o que precisam para crescer</li>
@@ -150,52 +183,85 @@
     </div>
 </div>
 <br>
-<footer class="grid-rodape">
+
+<div class="acaba">
+    <h2 class="titulos">Porque somo essenciais para os estudantes?</h2>
+    <button type="button" class="sem_ideia">"Desenvolva sua carreira com as ferramentas essenciais que a TechSolution oferece."</button>
+    <div class="falta_ideia">
+      <li><p>85% das vagas de emprego são preenchidas através de networking. Ter uma rede forte é crucial para conseguir as melhores oportunidades de trabalho​ .</p></li>
+      <li><p>70% dos empregos nunca são anunciados online. Isso significa que conexões profissionais são muitas vezes o único caminho para descobrir e garantir essas posições</p></li>
+      <li><p>Portfólios são essenciais para 77% dos empregadores ao avaliar a capacidade prática de um candidato, sendo um diferencial competitivo em um mercado saturado​ .</p></li>
+    </div>
+    <button type="button" class="sem_ideia">Ganho de Visibilidade</button>
+    <div class="falta_ideia">
+      <li><p> A TechSolve oferece projetos reais para você demonstrar suas habilidades.</p></li>
+      <li><p>Isso ajuda você a construir um portfólio impressionante que destaca suas conquistas.</p></li>
+      <li><p>Com um portfólio robusto, você aumenta significativamente suas chances de ser notado por empregadores.</p></li>
+    </div>
+    <button type="button" class="sem_ideia">Desenvolvimento Contínuo</button>
+    <div class="falta_ideia">
+      <li><p>Participe de projetos desafiadores e receba feedback contínuo de mentores experientes</p></li>
+      <li><p>Isso permite que você desenvolva suas habilidades e conhecimentos em um ambiente prático.Você estará sempre à frente, preparado para se adaptar e crescer no mercado em constante mudança.</p></li>
+      <li><p>Você estará sempre à frente, preparado para se adaptar e crescer no mercado em constante mudança.</p></li>
+    </div>
+
+</div>
+
+<footer class="grid-rodape" >
+    
     <form class="row1">
-        <p>Nome</p>
-        <label><input class="nome" name="firstName" type="text"/></label>
-        <label>
-            <select name="Nome">
-                <option>Estudante</option>
-                <option>Comunidade</option>
-                <option>Mentor</option>
-            </select>
-        </label>
-        <label>
-            <p>Email</p>
-            <label><input class="nome" type="email" type="email"></label>
-        </label>
-        <label>
-            <p>Telefone</p>
-            <label><input type="tel"></label>
-        </label>
+            <p>Nome</p>
+            <label><input class="nome" name="firstName" type="text"/></label>
+            <label>
+                <select name="Nome">
+                    <option>Estudante</option>
+                    <option>Comunidade</option>
+                    <option>Mentor</option>
+                </select>
+            </label>
+            <label>
+                <p>Email</p>
+                <label><input class="nome" type="email" type="email"></label>
+            </label>
+            <label>
+                <p>Telefone</p>
+                <label><input type="tel"></label>
+            </label>
     </form>
 
     <form class="row2">
-        <p>Onde você nos achou ?</p>
-        <label><input name="origem" type="radio" value="google" checked />Google</label>
-        <label><input name="origem" type="radio" value="facebook" />Facebook</label>
-        <label><input name="origem" type="radio" value="universidades"/>Universidades</label>
-
-        <p>Aceita nossos Termos?:</p>
-        <label><input name="privacy" type="radio" checked /> Eu aceito os termos de serviços.</label>
-        <br>
-        <label><input name="privacy" type="radio" /> Eu NÂO aceito os termos de serviços.</label>
-        <br>
-        <input type="submit" value="Continuar" />
+            <p>Onde você nos achou ?</p>
+            <label><input name="origem" type="radio" value="google" checked />Google</label>
+            <label><input name="origem" type="radio" value="facebook" />Facebook</label>
+            <label><input name="origem" type="radio" value="universidades"/>Universidades</label>
+    
+            <p>Aceita nossos Termos?:</p>
+            <label><input name="privacy" type="radio" checked /> Eu aceito os termos de serviços.</label>
+            <br>
+            <label><input name="privacy" type="radio" /> Eu NÂO aceito os termos de serviços.</label>
+            <br>
+            <input type="submit" value="Continuar" />
     </form>
+
     <form class="comentario">
-        <label for="comment">Comentário:</label>
-        <br>
-        <textarea id="texto" name="comment" required></textarea>
-        <br>
-        <label for="submit">Enviar</label>
-        <button type="submit" id="submit">Enviar</button>
+            <label for="comment">Comentário:</label>
+            <br>
+            <textarea id="texto" name="comment" required></textarea>
+            <br>
+            <label for="submit">Enviar</label>
+            <button type="submit" id="submit">Enviar</button>
     </form>
+
+    <div class="rede">
+            <h2>Nossas Redes!</h2>
+            <img src="Imagens/facebook.png" alt="">
+            <img src="Imagens/instagram.png" alt="">
+            <img src="Imagens/whatsapp.png" alt="">
+            <img src="Imagens/linkedin.png" alt="">
+            <img src="Imagens/facebook.png" alt="">
+    </div>
+
 </footer>
-
-
 </body>
-
-
+<script src="js/main.js"></script>
 </html>
