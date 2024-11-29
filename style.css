@@ -111,7 +111,7 @@ p{
 
 body {
     font-family:Poppins;
-    background-image: url('./Imagens/fundo.jpeg');
+    background-image: url('./Imagens/fundo_2.jpg');
 }
 
 .card-container1 {
@@ -188,6 +188,8 @@ body {
 
 
 .grid-rodape{
+    font-family:Poppins;
+    background-image: url('./Imagens/fundo.jpeg');
     width: 100%;
     margin: 10px;
     margin-top: 15px;
