@@ -275,6 +275,7 @@ body {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea,
 select {
   background-color: #222; /* Cinza-escuro */
