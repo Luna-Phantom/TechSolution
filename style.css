@@ -269,6 +269,7 @@ body {
 
 
 .option {
+    background-image: url('./Imagens/fundo.jpeg');
     background-color: black;
     color: #eeff00;
 }
