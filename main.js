@@ -90,3 +90,96 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_5ex0cll', 'template_0docak5', this)
+          .then(function() {
+              alert('Mensagem enviada com sucesso!');
+              form.reset(); 
+          }, function(error) {
+              alert('Erro ao enviar. Tente novamente.');
+              console.error('Erro:', error);
+          });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.favorite-btn');
+    const favoritosLista = document.getElementById('favoritos-lista');
+
+    // Carregar favoritos ao abrir a página
+    carregarFavoritos();
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const title = this.getAttribute('data-title');
+            adicionarFavorito(title);
+            this.classList.toggle('favoritado');
+            this.innerText = this.classList.contains('favoritado') ? 'Favoritado ✅' : 'Favoritar ❤️';
+        });
+    });
+
+    function adicionarFavorito(item) {
+        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+        if (!favoritos.includes(item)) {
+            favoritos.push(item);
+            localStorage.setItem('favoritos', JSON.stringify(favoritos));
+            carregarFavoritos();
+        }
+    }
+
+    function carregarFavoritos() {
+        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+        favoritosLista.innerHTML = '';
+
+        favoritos.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'favorito-item';
+            div.innerHTML = `<p>${item}</p>`;
+            favoritosLista.appendChild(div);
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.favorite-btn');
+  const favoritosLista = document.getElementById('favoritos-lista');
+
+  // Carregar favoritos ao abrir a página
+  carregarFavoritos();
+
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          const title = this.getAttribute('data-title');
+          adicionarFavorito(title);
+          this.classList.toggle('favoritado');
+          this.innerText = this.classList.contains('favoritado') ? 'Favoritado ✅' : 'Favoritar ❤️';
+      });
+  });
+
+  function adicionarFavorito(item) {
+      let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+      if (!favoritos.includes(item)) {
+          favoritos.push(item);
+          localStorage.setItem('favoritos', JSON.stringify(favoritos));
+          carregarFavoritos();
+      }
+  }
+
+  function carregarFavoritos() {
+      let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+      favoritosLista.innerHTML = '';
+
+      favoritos.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'favorito-item';
+          div.innerHTML = `<p>${item}</p>`;
+          favoritosLista.appendChild(div);
+      });
+  }
+});

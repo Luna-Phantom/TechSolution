@@ -1,6 +1,7 @@
 #menu{
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 ul {
     display: flex;
     align-items: flex-end;
@@ -322,3 +323,10 @@ body::before {
     background-color: #333;
     border-color: #888;
 }
+
+.favorite-btn{
+    background-color: #630063;
+    border-color: #630063;
+    color: #eeff00;
+}
+
